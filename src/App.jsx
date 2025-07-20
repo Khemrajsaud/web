@@ -1,5 +1,3 @@
-
-
 import { Routes, Route } from "react-router-dom";
 
 import Home from "./component/home/Home";
@@ -10,20 +8,19 @@ import Contact from "./component/pageses/Contact";
 import Services from "./component/pageses/Services";
 import Maps from "./component/address/Maps";
 import TeamsPage from "./component/pageses/Teams";
-import Navbar from "./component/navbar/navbar";
+import NavigationBar from "./component/navbar/NavigationBar";
 
 const App = () => {
   return (
     <div>
-      {/* Pass scroll handler to navbar */}
-   <Navbar/>
-
+      
+  <NavigationBar/>
       <Routes>
         <Route path="/service" element={<Services />} />
         <Route path="/" element={<Home />} />
 
         <Route path="/about" element={<About />} />
-        <Route path="/contact" element={<Contact/>} />
+        <Route path="/contact" element={<Contact />} />
         <Route path="/career" element={<Careers />} />
         <Route path="/team" element={<TeamsPage />} />
       </Routes>

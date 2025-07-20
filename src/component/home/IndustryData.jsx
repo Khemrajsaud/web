@@ -83,7 +83,11 @@ const IndustryData = () => {
 
         {/* Display Area */}
         <div className="w-full md:w-2/3 md:pl-6">
-          <img
+        
+          <img  
+
+
+
             src={activeItem.image}
             alt={activeItem.title}
             className="rounded-lg shadow-lg w-full h-52 sm:h-64 md:h-80 object-cover"
