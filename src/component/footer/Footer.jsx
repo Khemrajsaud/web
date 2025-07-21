@@ -11,7 +11,7 @@ import { Link } from "react-router-dom";
 import Logo from "../logo/Logo";
 export default function Footer() {
   return (
-    <footer className="bg-slate-900 text-white">
+    <footer className="bg-secondary text-white">
       <div className="container mx-auto px-6 py-6">
         <div className="grid grid-cols-1 lg:grid-cols-4 gap-8 lg:gap-12">
           <div className="lg:col-span-1 space-y-6">
@@ -29,10 +29,10 @@ export default function Footer() {
             </h2>
 
             {/* CTA Button */}
-            <button className="bg-orange-500 hover:bg-orange-600 text-white px-6 py-3 rounded-md flex items-center space-x-2 transition-colors">
+            <Link to='/contact' className="bg-orange-500 hover:bg-orange-600 text-white px-6 py-3 rounded-md flex items-center space-x-2 transition-colors">
               <span>Get In Touch</span>
               <HiArrowRight className="w-5 h-5" />
-            </button>
+            </Link>
 
             {/* Social Media Icons */}
             <div className="flex space-x-4">
@@ -186,15 +186,10 @@ export default function Footer() {
         {/* Copyright */}
         <div className="border-t border-slate-800 mt-12 pt-8">
           <p className="text-center text-gray-400 text-sm">
-            © 2025 Infinite Computer Solutions. All Rights Reserved.
+            © 2025 Seinxera IT Solutions. All Rights Reserved.
           </p>
         </div>
       </div>
-
-      {/* Accessibility Button */}
-      <button className="fixed bottom-4 left-4 w-12 h-12 bg-black text-white rounded-full flex items-center justify-center font-bold hover:bg-gray-800 transition-colors">
-        CO
-      </button>
     </footer>
   );
 }

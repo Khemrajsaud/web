@@ -1,8 +1,8 @@
-
 import { useRef } from "react";
 import emailjs from "@emailjs/browser";
 import { toast } from "react-toastify";
 import firm from "../../assets/form.jpeg";
+import Maps from "../address/Maps";
 
 const Contact = () => {
   const form = useRef();
@@ -149,7 +149,7 @@ const Contact = () => {
                 required
               />
               <label htmlFor="checkbox" className="text-sm text-gray-600">
-                I have read Infinite Computer Solutions’s{" "}
+                I have read Seinxera Solutions’s{" "}
                 <span className="text-blue-600 underline cursor-pointer">
                   Privacy Policy
                 </span>{" "}
@@ -166,6 +166,7 @@ const Contact = () => {
           </form>
         </div>
       </div>
+      <Maps/>
     </div>
   );
 };

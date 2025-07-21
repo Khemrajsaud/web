@@ -6,7 +6,6 @@ import Careers from "./component/pageses/Careers";
 import Footer from "./component/footer/Footer";
 import Contact from "./component/pageses/Contact";
 import Services from "./component/pageses/Services";
-import Maps from "./component/address/Maps";
 import TeamsPage from "./component/pageses/Teams";
 import NavigationBar from "./component/navbar/NavigationBar";
 
@@ -25,7 +24,7 @@ const App = () => {
         <Route path="/team" element={<TeamsPage />} />
       </Routes>
 
-      <Maps />
+   
       <Footer />
     </div>
   );

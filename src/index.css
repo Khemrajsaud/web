@@ -3,8 +3,18 @@
 
 body{
    font-family: "Archivo", sans-serif;
+   color: "oklch(42.4% 0.199 265.638)"
+   
 }
 
+@theme {
+  --font-display: "Satoshi", "sans-serif";
+  --breakpoint-3xl: 120rem;
+  --color-primary: #006494;
+  --color-secondary: #003554;
+  --color-footer: #003554;
+ 
+}
 
 
 

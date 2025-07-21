@@ -6,13 +6,15 @@ import cloud from '../../assets/services/cloud.svg';
 import security from '../../assets/services/security.svg';
 import ai from '../../assets/services/cloud.svg';
 import consulting from '../../assets/services/web.svg';
-import ServiceCard from '../ServiceCard';
+
+
 
 const services = [
   {
     icon: web,
     title: 'Web Development',
     description: 'Custom web applications and responsive websites using the latest technologies.',
+  
   },
   {
     icon: mobile,
@@ -46,7 +48,7 @@ const Services = () => {
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-blue-50 to-blue-100 py-16 px-6 md:px-20">
-      <div className="text-center mb-16">
+      <div className="text-center mb-16 ">
         <h1 className="text-4xl md:text-5xl font-extrabold text-blue-900 mb-4">
           Our Services
         </h1>
@@ -55,14 +57,13 @@ const Services = () => {
         </p>
       </div>
 
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10">
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3  gap-10">
         {services.map((service, index) => (
-          <ServiceCard
-            key={index}
-            icon={service.icon}
-            title={service.title}
-            description={service.description}
-          />
+            <div key={index} className="bg-white hover:bg-secondary hover:text-white p-4 rounded-lg shadow-md">
+    <img src={service.icon} alt={service.title} className="w-16 h-16 mb-4" />
+    <h3 className="text-xl font-bold">{service.title}</h3>
+    <p className="text-sm">{service.description}</p>
+  </div>
         ))}
       </div>
     </div>
