@@ -1,45 +1,58 @@
 import { useState } from "react";
-import download1 from "../../assets/download1.jpeg";
-import download2 from "../../assets/download2.jpeg";
-import download3 from "../../assets/download3.jpeg";
-import download4 from "../../assets/download4.jpeg";
+import aiImage from "../../assets/ai.jpg";
+import itImage from "../../assets/ai.jpg";
+import iotImage from "../../assets/ai.jpg";
+import desktopImage from "../../assets/ai.jpg";
+import mobileImage from "../../assets/ai.jpg";
+import webImage from "../../assets/ai.jpg";
 
 const industryItems = [
   {
-    title: "Healthcare",
-    icon: "💙",
-    image: download1,
-    description: "Digital healthcare innovations for better outcomes.",
+    title: "AI (Artificial Intelligence)",
+    icon: "🤖",
+    image: aiImage,
+    description:
+      "Advanced AI-driven solutions to automate, analyze, and optimize business processes.",
   },
   {
-    title: "Banking & Financial Services",
-    icon: "🏦",
-    image: download2,
-    description: "Secure and smart financial technology solutions.",
+    title: "IT Services",
+    icon: "💻",
+    image: itImage,
+    description:
+      "Comprehensive IT services including infrastructure, support, and cybersecurity.",
   },
   {
-    title: "Insurance",
-    icon: "🛡️",
-    image: download3,
-    description: "Modern insurance platforms for a digital age.",
+    title: "IoT (Internet of Things)",
+    icon: "🌐",
+    image: iotImage,
+    description:
+      "Smart connected solutions for devices, homes, cities, and industries.",
   },
   {
-    title: "Telecom",
-    icon: "📡",
-    image: download4,
-    description: "Next-gen connectivity and customer experience.",
+    title: "Desktop App Development",
+    icon: "🖥️",
+    image: desktopImage,
+    description:
+      "Robust desktop applications tailored for enterprise or individual needs.",
   },
   {
-    title: "Media & Entertainment",
-    icon: "📺",
-    image: download1,
-    description: "Robust portfolio of content management solutions.",
+    title: "Mobile App Development",
+    icon: "📱",
+    image: mobileImage,
+    description: "Native and cross-platform mobile apps with seamless UI/UX.",
+  },
+  {
+    title: "Web Development",
+    icon: "🌍",
+    image: webImage,
+    description:
+      "Scalable, responsive, and secure web solutions for businesses of all sizes.",
   },
 ];
 
 const IndustryData = () => {
   const [activeIndex, setActiveIndex] = useState(0);
-  const activeItem = industryItems[activeIndex]; 
+  const activeItem = industryItems[activeIndex];
 
   return (
     <div className="px-4 md:px-10 py-10">
@@ -52,9 +65,9 @@ const IndustryData = () => {
           Purpose-built, next-gen solutions grounded in deep industry expertise
         </h1>
         <p className="text-gray-600 mt-2 text-sm md:text-base">
-          From healthcare to finance, telecom to government bodies, we
-          collaborate with clients across sectors to deliver innovative
-          solutions that address unique challenges and drive sustainable growth.
+          From artificial intelligence to mobile and web applications, we build
+          cutting-edge solutions to solve real-world problems and drive
+          innovation.
         </p>
       </div>
 
@@ -83,11 +96,7 @@ const IndustryData = () => {
 
         {/* Display Area */}
         <div className="w-full md:w-2/3 md:pl-6">
-        
-          <img  
-
-
-
+          <img
             src={activeItem.image}
             alt={activeItem.title}
             className="rounded-lg shadow-lg w-full h-52 sm:h-64 md:h-80 object-cover"
