@@ -55,7 +55,7 @@ const IndustryData = () => {
   const activeItem = industryItems[activeIndex];
 
   return (
-    <div className="px-4 md:px-10 py-10">
+    <div className="px-4 lg:px-20 py-10">
       {/* Header Section */}
       <div className="mb-8">
         <h2 className="text-lg md:text-xl text-blue-800 font-semibold">

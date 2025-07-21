@@ -107,7 +107,7 @@ const Careers = () => {
 
       {/* Join Our Team Box */}
       <div className="relative w-full px-4">
-        <div className="absolute bottom-[100px] left-1/2 transform -translate-x-1/2 bg-white p-6 rounded-lg shadow-md w-full max-w-lg text-center border border-gray-200">
+        <div className="lg:absolute lg:bottom-[100px] bottom-[2px]  lg:left-1/2 transform lg:-translate-x-1/2 bg-white p-6 rounded-lg shadow-md w-full max-w-lg text-center border border-gray-200">
           <h3 className="text-orange-600 text-sm font-semibold uppercase">
             Join Our Team
           </h3>
